@@ -1,50 +1,42 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
    <head>
       <title>User Doucments</title>
-      <style>
-      .button {
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      }
-
-     .button1 {background-color: #4CAF50;} /* Green */
-     .button2 {background-color: #f44336;} /* Red */
-</style>
    </head>
 
    <body>
+
       <h1>Documents</h1>
-      <p>
-      	 <br>
-         <a href="file:///C:/Users/Matt/Downloads/MAPSYS%20Application%20Assignment/Interview/Docs/SD/SD-I.pdf">Document 1</a>
-         <br>
-         <a href="file:///C:/Users/Matt/Downloads/MAPSYS%20Application%20Assignment/Interview/Docs/SD/SD-II.pdf">Document 2</a>
-         <br>
-         <a href="file:///C:/Users/Matt/Downloads/MAPSYS%20Application%20Assignment/Interview/Docs/SD/SD-III.pdf">Document 3</a>
-         <br>
-         <a href="file:///C:/Users/Matt/Downloads/MAPSYS%20Application%20Assignment/Interview/Docs/SD/SD-IV.pdf">Document 4</a>
-         <br>
-         <a href="file:///C:/Users/Matt/Downloads/MAPSYS%20Application%20Assignment/Interview/Docs/SD/SD-V.pdf">Document 5</a>
-         <br>
-         <a href="file:///C:/Users/Matt/Downloads/MAPSYS%20Application%20Assignment/Interview/Docs/SD/SD-VI.pdf">Document 6</a>
-         <br>
-         <a href="file:///C:/Users/Matt/Downloads/MAPSYS%20Application%20Assignment/Interview/Docs/SD/SD-VII.pdf">Document 7</a>
-         <br>
-         <a href="file:///C:/Users/Matt/Downloads/MAPSYS%20Application%20Assignment/Interview/Docs/SIG/SIG.pdf">Document 8</a>
-      </p>
-      <form action="addDocument.html">
-         <button class="button button1">Upload Document</button>
-      <form action="https://www.w3docs.com/">
-         <button class="button button2">Delete Document</button>
-<!--       <button class="button button1">Upload Document</button> -->
-<!--       <button class="button button2">Delete Document</button> -->   
-    </body>
-</html>
+      <table style="width:100%">
+      <tbody>
+      	<tr>
+      	  <a href="mapsysInterview/Docs/SD/SD-I.pdf">Document 1 </a> <br>
+      	  <a href="mapsysInterview/Docs/SD/SD-II.pdf">Document 2 </a> <br>
+      	  <a href="mapsysInterview/Docs/SD/SD-III.pdf">Document 3 </a> <br>
+          <a href="mapsysInterview/Docs/SD/SD-IV.pdf">Document 4 </a> <br>
+          <a href="mapsysInterview/Docs/SD/SD-V.pdf">Document 5 </a> <br>
+          <a href="mapsysInterview/Docs/SD/SD-VI.pdf">Document 6</a> <br>
+          <a href="mapsysInterview/Docs/SD/SD-VII.pdf">Document 7</a> <br>
+          <a href="mapsysInterview/Docs/SIG/SIG.pdf">Document 8</a> <br>
+          <a href="mapsysInterview/Documents.csv">CSV File </a>
+        <tr>
+      </table>
+
+    
+
+    <h1>Please Select a PDF to upload</h1>
+    <br>
+    <form> 
+       <input type="file" id="myFile" accept = ".pdf" name="filename">
+       <input type="submit">
+    </form>
+    
+
+
+    <br>
+    <h1>Please Select a PDF to delete</h1>
+    <br>
+    <form action="/action_page.php">
+       <input type="file" id="myFile" name="filename">
+       <input type="submit">
+    </form>
